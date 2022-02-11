@@ -39,6 +39,7 @@ header nav a{
     font-weight: 700;
     color:var(--blue);
     margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -56,6 +57,7 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-top: 15px;
 }
 
 
@@ -81,12 +83,13 @@ header nav a:hover{
     margin-right: 15px;
     font-size: 12px;
     cursor: pointer;
-    transition: .3s ease all;
+    transition: 0.6s ease all;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .botao:hover{
-    background-color:white;
+    background-color: var(--yellow);
     color:black;
 }
 
@@ -113,6 +116,7 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin: 15px;
+    border-top: 1px solid var(--yellow);
 }
 
 .carrosel-text {
@@ -141,10 +145,29 @@ header nav a:hover{
     padding: 20px 70px;
 }
 
-.contatos {
-    padding: 20px;
-    background-color: #004AAD;
-    color: white;
+.card {
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: small;
+    border-top: 1px solid var(--yellow);
+}
+
+.footer img,
+.footer div {
+    padding: 10px;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.footer-txt {
+    margin-top: 15px;
 }
 
 

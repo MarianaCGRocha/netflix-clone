@@ -1,12 +1,25 @@
 @media screen and (max-width:700px){
+    .botoes {
+        display: flex;
+    }
+    
     header .caixa{
         display: flex;
         flex-direction: column;
     }
 
+    .filme-principal .caixa {
+        width: 90%;
+    }
+
+    .filme-principal .caixa .descricao {
+        margin-bottom: 20px;
+    }
+
     .botao{
         margin-top: 5px;
         width: 300px;
+        padding: 8px 30px;
     }
 
 }

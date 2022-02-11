@@ -18,16 +18,15 @@
 </head>
 <body>
     <header>
-        <div class="caixa">
+        <div class="caixa" id="inicio">
             <a href="#inicio">
             <img class="img-logo inicio" src="img/Logo-ret.png" href="#inicio" title="Logo da GastroTOUR" alt="Logo do GastroTOUR com um vinho, um sanduíche, uma laranja e um aviãozinho de papel">
             </a>
             <nav>
-                <a href="#inicio">Inicio</a>
                 <a href="#sobre-nos">Sobre o GastroTOUR</a>
                 <a href="#street-food">Street Food</a>
                 <a href="#restaurants">Restaurantes</a>
-                <a href="#recipes">Receitas</a>
+                <a href="#receitas">Receitas</a>
             </nav>
         </div>
     </header>
@@ -51,7 +50,7 @@
         </div>
     </main>
 
-    <div class="carrosel-filmes street-food">
+    <div class="carrosel-filmes street-food" id="street-food">
         <div class="carrosel-text">Vídeos de <b><font color="#004AAD">Street Food</font></b> em alta agora:</div>
         <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -117,7 +116,7 @@
     </div>
     <!-- Caixas / Colunas -->
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="receitas">
             <div class="col-12 col-lg-5 col-xl-5">
             <div class="card">
                 <img src="img/Logo-ret.png" class="card-img-top sobre-nos" alt="Logo da GastroTOUR sendo o nome do site no centro, um vinho, um avião de papel, laranjas e um sanduíche.">
@@ -131,7 +130,7 @@
                 </div>
               </div>
           </div>
-          <div class="col-12 col-xl-5 col-lg-5 offset-lg-1">
+          <div class="col-12 col-xl-5 col-lg-5 offset-lg-1" id="sobre-nos">
             <div class="card">
                 <img src="img/cabbagesnd.jpg" class="card-img-top recipe" alt="Foto do famoso sanduíche de repolho coreano, recheio de ovos com repolho e cenoura dentro de duas fatias douradas e amanteigadas de pão de forma">
                 <div class="card-body">
@@ -159,7 +158,7 @@
         </div>
 
     <!--Carrossel de Vídeos de Restaurantes-->
-    <div class="carrosel-filmes #restaurants">
+    <div class="carrosel-filmes #restaurants" id="restaurants">
         <div class="carrosel-text">Vídeos de <b><font color="#004AAD">Restaurantes pelo Mundo</font></b> em alta agora:</div>
         <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -252,12 +251,14 @@
     <script src="js/owl/setup.js"></script>
 </body>
 
-<footer>
-    <div class="contatos">
-        <p>
-            Para sugestões e mais informações entre em contato através:<br />
+<footer class="footer">
+    <a href="#inicio">
+    <img src="img/Logo-ret.png">
+    </a>
+    <div>
+        <p class="footer-txt"> Para sugestões e mais informações entre em contato através:<br />
             (31) XXXXX - XXXXX <br />
-            e-mail: gastrotour@gastrotour.com
+            e-mail: <a href="mailto:gastro@gastrotour.com">gastrotour@gastrotour.com</a>
         </p>
     </div>
 </footer>
