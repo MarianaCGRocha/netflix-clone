@@ -3,92 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style/main.css">
 
     <!--responsividade-->
-    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/responsive.css">    
 
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>NETFLIX CLONE</title>
+    <title>GastroTour</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+        <div class="caixa">
+            <a href="#inicio">
+            <img class="img-logo inicio" src="img/Logo-ret.png" href="#inicio" title="Logo da GastroTOUR" alt="Logo do GastroTOUR com um vinho, um sanduíche, uma laranja e um aviãozinho de papel">
+            </a>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-nos">Sobre o GastroTOUR</a>
+                <a href="#street-food">Street Food</a>
+                <a href="#restaurants">Restaurantes</a>
+                <a href="#recipes">Receitas</a>
             </nav>
         </div>
     </header>
 
     <main>
         <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">HOUSE OF CARDS</h3>
-                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+            <div class="caixa">
+                <h3 class="titulo">STREET FOOD PELO MUNDO - FRANÇA</h3>
+                <p class="descricao">Buscando o próximo destino para suas férias? Veja agora esse fantástico vídeo da National Geographic sobre as comidas de rua da França e coloque Paris nos seu radar de viagens gastronômicas!</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <a role="button" class="botao" href="https://www.youtube.com/watch?v=5_hPPFcznI8" target="_blank">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
+                    </a>
+                    <a role="button" class="botao" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="carrosel-filmes">
+    <div class="carrosel-filmes street-food">
+        <div class="carrosel-text">Vídeos de <b><font color="#004AAD">Street Food</font></b> em alta agora:</div>
         <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=PnRRfgKImjc" target="_blank">
+                    <img class="box-filme" src="img/indian.jpg" alt="Street food indiano imperdível - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food indiano imperdível - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=r0VwLPdMfoE" target="_blank">
+                    <img class="box-filme" src="img/bangkok.jpg" alt="Street food em Bangkok - Tailândia - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food em Bangkok - Tailândia - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=fPMTC9wiotY" target="_blank">
+                    <img class="box-filme" src="img/poland.jpg" alt="Street food na Polônia - Youtube" href="https://www.youtube.com/watch?v=fPMTC9wiotY" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food na Polônia - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=2Iiy1uaTYWk" target="_blank">
+                    <img class="box-filme" src="img/dubaipak.jpg" alt="Street Food Paquistanesa em Dubai - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street Food Paquistanesa em Dubai - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                    <a href="https://youtu.be/blEzUJTcQAY" target="_blank">
+                    <img class="box-filme" src="img/taiwan.jpg" alt="Street food em um mercado noturno de Taiwan - Youtube" srcset=""></a>
+                    <p class="videos-txt">Street food em um mercado noturno de Taiwan - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=QxvkYJF2-XE" target="_blank">
+                    <img class="box-filme" src="img/pakistan.jpg" alt="Compilado fantástico de street food no Paquistão - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Compilado fantástico de street food no Paquistão - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=W3t1kmP4oO8" target="_blank">
+                    <img class="box-filme" src="img/korean1.jpg" alt="Street food surpreendente na Coréia - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food surpreendente na Coréia - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=TlWDF3BfUdo" target="_blank">
+                    <img class="box-filme" src="img/brazil1.jpg" alt="Street food brasileiro no Rio de Janeiro - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food brasileiro no Rio de Janeiro - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=jalvynZPNxM" target="_blank">
+                    <img class="box-filme" src="img/maxican.jpg" alt="Street food mexicana em Los Angeles - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food mexicana em Los Angeles - Youtube</p>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                    <a href="https://www.youtube.com/watch?v=jzA2-U-wSbU" target="_blank">
+                    <img class="box-filme" src="img/london.jpg" alt="Street food de todo mundo no Wapping Market em Londres - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Street food de todo mundo no Wapping Market em Londres - Youtube</p>
+                </div>
+        </div>
+    </div>
+    <!-- Caixas / Colunas -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-5 col-xl-5">
+            <div class="card">
+                <img src="img/Logo-ret.png" class="card-img-top sobre-nos" alt="Logo da GastroTOUR sendo o nome do site no centro, um vinho, um avião de papel, laranjas e um sanduíche.">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre a GastroTOUR</h5>
+                  <p class="card-text">O GastroTOUR é uma iniciativa que surgiu em 2022 e busca reunir o melhor conteúdo em vídeo relacionado a gastronomia ao redor do mundo em apenas um lugar. Nos tornamos um acervo rico com indicações de moradores locais e vídeos cidadãos comuns exaltando a diversidade da gastronomia local, seja ela em restaurantes renomados ou em barraquinhas em markets.
+                  Aqui você vai encontrar todos os tipos de estabelecimentos em diversos países para que consiga organizar suas viagens incluindo os melhores destinos gastronômicos indicados por quem realmente entende do assunto.
+                  Venha se deliciar com nossos vídeos e também conhecer receitas novas de localidades inusitadas! Toda semana trazemos uma raceita diferente no site para você experimentar no conforto de sua casa. Também temos sugestão de troca de ingredientes para que seja acessível à maioria dos nossos usuários.
+                  Conhece um local inusitado em seu país/estado/cidade?  <a href="mailto:email@example.com">Mande para a gente!</a>
+                  </p>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-xl-5 col-lg-5 offset-lg-1">
+            <div class="card">
+                <img src="img/cabbagesnd.jpg" class="card-img-top recipe" alt="Foto do famoso sanduíche de repolho coreano, recheio de ovos com repolho e cenoura dentro de duas fatias douradas e amanteigadas de pão de forma">
+                <div class="card-body">
+                  <h5 class="card-title">Receita da Semana: Sanduiche de Repolho Coreano</h5>
+                  <p class="card-text">
+                      Ingredientes:<br />
+                      3 folhas de repolho (verde ou roxo);<br />
+                      1/2 cenoura ralada;<br />
+                      3 folhas de cebolinhas cortadas;<br />
+                      1 ovo;<br />
+                      2 colheres de manteiga;<br />
+                      2 colheres de geléia;<br />
+                      2 fatias de pão de forma;<br />
+                      Sal e pimenta preta à vontade.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Misture todos as verduras, incluindo a cebolinha, com o ovo.</li>
+                  <li class="list-group-item">Derreta 1 colher de manteiga e doure as fatias de pão de forma. Reserve.</li>
+                  <li class="list-group-item">Coloque outra colher de manteiga na panela e cozinhe os ovos com os legumes e recheie o pão.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    <!--Carrossel de Vídeos de Restaurantes-->
+    <div class="carrosel-filmes #restaurants">
+        <div class="carrosel-text">Vídeos de <b><font color="#004AAD">Restaurantes pelo Mundo</font></b> em alta agora:</div>
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=X2jakwIVLbY" target="_blank">
+                    <img class="box-filme" src="img/rest1.jpg" alt="Conheça um dos melhores restaurantes do mundo: Mise En Place - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Conheça um dos melhores restaurantes do mundo: Mise En Place - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=N5SrDhe4bE0" target="_blank">
+                    <img class="box-filme" src="img/rest2.jpg" alt="Único restaurante em Las Vegas com 3 estrelas Michelin, conheça agora! - Tailândia - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Único restaurante em Las Vegas com 3 estrelas Michelin, conheça agora! - Tailândia - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=RPy41Sie8Os" target="_blank">
+                    <img class="box-filme" src="img/rest3.jpg" alt="Veja como era o Noma, um dos melhores restaurantes do mundo, fechado em 2016 - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Veja como era o Noma, um dos melhores restaurantes do mundo, fechado em 2016 - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=o9TO7-83S7A" target="_blank">
+                    <img class="box-filme" src="img/rest4.jpg" alt="Conheça o restaurante Alchemist em Copenhagen e a mais nova invenção do chef Rasmus Munk - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Conheça o restaurante Alchemist em Copenhagen e a mais nova invenção do chef Rasmus Munk - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=lABHSEMRxi0" target="_blank">
+                    <img class="box-filme" src="img/rest5.jpg" alt="Por dentro do melhor restaurante do Brasil: A Casa do Porco (SP) - Youtube" srcset=""></a>
+                    <p class="videos-txt">Por dentro do melhor restaurante do Brasil: A Casa do Porco (SP) - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=YLRn-tB-_lI" target="_blank">
+                    <img class="box-filme" src="img/rest6.jpg" alt="Por dentro do Mirazur: considerado por muitos críticos o melhor restaurante do mundo (Singapura). - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Por dentro do Mirazur: considerado por muitos críticos o melhor restaurante do mundo (Singapura). - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=wtoYzEnQWtg" target="_blank">
+                    <img class="box-filme" src="img/rest7.jpg" alt="Conheça o Odette: o melhor restaurante da Ásia (Singapura) - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Conheça o Odette: o melhor restaurante da Ásia (Singapura) - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=gK9yqULX0ew" target="_blank">
+                    <img class="box-filme" src="img/rest8.jpg" alt="Acompanhe um tour pelo fabuloso restaurante André em Singapura, puro conceito! - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Acompanhe um tour pelo fabuloso restaurante André em Singapura, puro conceito! - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=XG886DHfp68" target="_blank">
+                    <img class="box-filme" src="img/rest9.jpg" alt="Conheça um dos 50 melhores restaurantes de churrasco do mundo: Asador Etxebarri - Youtube" srcset="">
+                    </a>
+                    <p class="videos-txt">Conheça um dos 50 melhores restaurantes de churrasco do mundo: Asador Etxebarri - Youtube</p>
+                </div>
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=-3ZORjjQ1yM" target="_blank">
+                    <img class="box-filme" src="img/rest10.jpg" alt="Vídeo sobre os restaurantes mais importantes do Rio de Janeiro e São Paulo" srcset="">
+                    </a>
+                    <p class="videos-txt">Guia Michelin de Restaurantes: Rio de Janeiro e São Paulo - Youtube</p>
                 </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Street Food Around The World: Paris | National Geographic Adventure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Paris é a capital e a cidade mais popular da França. Situada às margens do Rio Sena, no norte do país, é o centro da região da França denominada Île-de-France, também conhecida como "região parisiense".
+                Paris além de ser considerada a cidade luz da Europa é, também, considerada o polo gastronômico do mundo. Nessa cidade, cada comida tem lojas especializadas: boulangerie, fromagerie and charcuterie. Ishai tem 24 horas para imergir na maravilhosa culinária francesa, ele aprenderá a fazer baguettes, conhecerá inúmeros tipos de queijos e encontrará o famoso crítico gastronômico Gilles Pudlowski.
+            Fonte: Youtube
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
- 
-
- 
 </body>
+
+<footer>
+    <div class="contatos">
+        <p>
+            Para sugestões e mais informações entre em contato através:<br />
+            (31) XXXXX - XXXXX <br />
+            e-mail: gastrotour@gastrotour.com
+        </p>
+    </div>
+</footer>
+
 </html>

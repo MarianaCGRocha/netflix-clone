@@ -1,6 +1,9 @@
 :root{
     --vermelho:#E50914;
     --preta:#141414;
+    --blue: #004AAD;
+    --blue2: #38B6FF;
+    --yellow: #FFCC00;
 }
 
 *{
@@ -12,46 +15,43 @@
 /*elementos base*/
 body{
    background: var(--preta);
-   font-family: 'Arial', Times, serif;
+   font-family: 'Arial', Times, serif !important;
    color:white;
 }
 
 
-header .container{
+header .caixa{
+    background-color: #fff;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    margin-left: 0px;
 }
 
-header .logo{
-    margin-left: 5px;
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size:40px;
+header .img-logo {
+    width: 150px;
+    height: 80px;
 }
 
 header nav a{
     text-decoration:none;
-    color:#AAA;
+    font-weight: 700;
+    color:var(--blue);
     margin-right: 10px;
 }
 
 
 header nav a:hover{
-    color:#fff;
+    color: var(--yellow);
 }
 
 /*filme principal*/
 .filme-principal{
-    font-size:16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-house.jpg');
-
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/frenchst.jpg');
     height:400px;
-    background-size:cover;
- 
-
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,26 +62,27 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    color: white;
 }
 
 
 .filme-principal .titulo{
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: white;
 }
 
 .botao{
     background-color: rgba(0,0,0,.50);
     border:none;
     color: white;
-
-    padding:15px 30px;
+    padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
-
     cursor: pointer;
     transition: .3s ease all;
+    text-decoration: none;
 }
 
 .botao:hover{
@@ -94,11 +95,11 @@ header nav a:hover{
 }
 
 
-.container{
+.caixa{
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.filme-principal .caixa{
     width: 70%;
 }
 
@@ -111,11 +112,40 @@ header nav a:hover{
 
 
 .carrosel-filmes{
-    margin-top:5px;
+    margin: 15px;
 }
 
+.carrosel-text {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-family: Arial;
+}
 
+.videos-txt {
+    font-size: small;
+}
 
+.owl-carrosel {
+    font-size: small;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 230px;
+    padding: 20px 70px;
+}
+
+.contatos {
+    padding: 20px;
+    background-color: #004AAD;
+    color: white;
+}
 
 
 
